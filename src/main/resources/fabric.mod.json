@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "dice",
+  "version": "${version}",
+  "name": "Dice",
+  "description": "The Fabric port of \"Dice\" mod originally created by -Unknown-.",
+  "authors": [
+    "SNWCreations",
+    "-Unknown-"
+  ],
+  "contact": {
+    "repo": "https://github.com/SNWCreations/DiceFabric"
+  },
+  "license": "GPL-3.0",
+  "icon": "assets/dice/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "mrunknown404.dice.DiceClient"
+    ],
+    "main": [
+      "mrunknown404.dice.Dice"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}",
+    "porting_lib_config": "*",
+    "porting_lib_entity": "*"
+  }
+}
